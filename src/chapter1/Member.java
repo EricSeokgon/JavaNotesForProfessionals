@@ -12,4 +12,20 @@ public class Member {
         this.level = level;
         this.rank = rank;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public int getRank() {
+        return rank;
+    }
 }
