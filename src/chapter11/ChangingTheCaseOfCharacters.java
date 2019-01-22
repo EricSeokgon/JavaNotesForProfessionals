@@ -1,14 +1,31 @@
 package chapter11;
 
+import java.util.Scanner;
+
 public class ChangingTheCaseOfCharacters {
     public static void main(String[] args) {
-        String s = "This is a Random String.";
+        Scanner scanner = new Scanner((System.in));
+        System.out.println("Enter the String");
 
-        String s1 = s.toUpperCase();
-        String s2 = s.toLowerCase();
-
+        String s = scanner.next();
+        char[] a = s.toCharArray();
+        System.out.println("Enter the character you are looking for");
         System.out.println(s);
-        System.out.println(s1);
-        System.out.println(s2);
+        String c = scanner.next()
+        char d = c.charAt(0);
+
+        for (int i = 0; i <= s.length(); i++) {
+            if (a[i] == d) {
+                if (d >= 'a' && d <= 'z') {
+                    d -= 32;
+                } else if (d >= 'A' && d <= 'Z') {
+                    d += 32;
+                }
+                a[i] = d;
+                break;
+            }
+        }
+        s = String.valueOf(a);
+        System.out.println(s);
     }
 }
