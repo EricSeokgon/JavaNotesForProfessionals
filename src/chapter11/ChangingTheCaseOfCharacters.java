@@ -11,7 +11,7 @@ public class ChangingTheCaseOfCharacters {
         char[] a = s.toCharArray();
         System.out.println("Enter the character you are looking for");
         System.out.println(s);
-        String c = scanner.next()
+        String c = scanner.next();
         char d = c.charAt(0);
 
         for (int i = 0; i <= s.length(); i++) {
