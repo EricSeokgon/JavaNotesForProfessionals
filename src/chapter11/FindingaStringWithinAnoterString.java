@@ -20,5 +20,15 @@ public class FindingaStringWithinAnoterString {
         str11.toLowerCase().contains(str22.toLowerCase());
         str11.toLowerCase().indexOf(str22.toLowerCase());
 
+        String a = "alpha";
+        String b = "alpha";
+        String c = new String("alpha");
+
+        System.out.println(a.equals(b) && b.equals(c));
+
+        System.out.println(a == b);
+        System.out.println(a != c);
+        System.out.println(b != c);
+
     }
 }
