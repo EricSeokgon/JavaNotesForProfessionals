@@ -13,5 +13,13 @@ public class ComparingDateobjects {
         final Calendar calendar2 = Calendar.getInstance();
         calendar2.set(1990, Calendar.NOVEMBER, 1, 0, 0, 0);
         Date samebirthdate = calendar2.getTime();
+
+        //Before example
+        System.out.printf("Is %1$tF before %2$tF? %3$b%n", today, birthdate,
+                Boolean.valueOf(today.before(birthdate)));
+        System.out.printf("Is %1$tF before %1$tF? %3$b%n", today, today,
+                Boolean.valueOf(today.before(today)));
+        System.out.printf("Is %2$tF before %1$tF? %3$b%n", today, birthdate,
+                Boolean.valueOf(birthdate.before(today)));
     }
 }
