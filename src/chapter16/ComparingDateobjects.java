@@ -21,5 +21,13 @@ public class ComparingDateobjects {
                 Boolean.valueOf(today.before(today)));
         System.out.printf("Is %2$tF before %1$tF? %3$b%n", today, birthdate,
                 Boolean.valueOf(birthdate.before(today)));
+
+        //After example
+        System.out.printf("Is %1$tF after %2$tF? %3$b%n", today, birthdate,
+                Boolean.valueOf(today.after(birthdate)));
+        System.out.printf("Is %1$tF after %1$tF? %3$b%n", today, birthdate,
+                Boolean.valueOf(today.after(today)));
+        System.out.printf("Is %2$tF after %1$tF? %3$b%n", today, birthdate,
+                Boolean.valueOf(birthdate.after(today)));
     }
 }
