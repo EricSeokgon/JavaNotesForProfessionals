@@ -29,5 +29,13 @@ public class ComparingDateobjects {
                 Boolean.valueOf(today.after(today)));
         System.out.printf("Is %2$tF after %1$tF? %3$b%n", today, birthdate,
                 Boolean.valueOf(birthdate.after(today)));
+
+        //Compare example
+        System.out.printf("Compare %1$tF to %2$tF: %3$d%n", today, birthdate,
+                Integer.valueOf(today.compareTo(birthdate)));
+        System.out.printf("Compare %1$tF to %1$tF: %3$d%n", today, birthdate,
+                Integer.valueOf(today.compareTo(today)));
+        System.out.printf("Compare %2$tF to %1$tF: %3$d%n", today, birthdate,
+                Integer.valueOf(birthdate.compareTo(today)));
     }
 }
