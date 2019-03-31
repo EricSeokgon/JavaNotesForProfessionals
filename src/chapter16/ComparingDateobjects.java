@@ -37,5 +37,12 @@ public class ComparingDateobjects {
                 Integer.valueOf(today.compareTo(today)));
         System.out.printf("Compare %2$tF to %1$tF: %3$d%n", today, birthdate,
                 Integer.valueOf(birthdate.compareTo(today)));
+
+        //Equal example
+        System.out.printf("Is %1$tF equal to %2$tF? %3$b%n", today, birthdate,
+                Boolean.valueOf(today.equals(birthdate)));
+        System.out.printf("Is %1$tF equal to %2$tF? %3$b%n", birthdate, samebirthdate,
+                Boolean.valueOf(birthdate.equals(samebirthdate)));
+        System.out.printf("Because birthdate.getTime() -> %1$d is different from samebirthdate.getTime() -> %2$d,there are millisecondes!%n", Long.valueOf(birthdate.getTime()), Long.valueOf(samebirthdate.getTime()));
     }
 }
