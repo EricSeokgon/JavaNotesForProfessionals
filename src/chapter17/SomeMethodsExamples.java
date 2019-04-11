@@ -1,6 +1,7 @@
 package chapter17;
 
 import java.time.Clock;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 
@@ -14,5 +15,15 @@ public class SomeMethodsExamples {
         System.out.println("Local TIME USING now(Clock.system(ZoneId.of())) ::: >>>> " + ldt2);
         System.out.println("Following is a static map in ZoneId class which has mapping of short timezone names to their Actual timezone names");
         System.out.println(ZoneId.SHORT_IDS);
+    }
+
+    /**
+     * This has the methods of the class {@link LocalDate}
+     */
+    public static void checkLocalDate() {
+        LocalDate localDate = LocalDate.now();
+        System.out.println("Gives date without Time using now() method. >> " + localDate);
+        LocalDate localDate2 = LocalDate.now(ZoneId.of(ZoneId.SHORT_IDS.get("ECT")));
+        System.out.println("now() is overridden to take ZoneID as parametere using this we can get the same date under different timezones. >> " + localDate2);
     }
 }
