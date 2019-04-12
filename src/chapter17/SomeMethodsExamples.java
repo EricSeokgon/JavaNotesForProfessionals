@@ -4,6 +4,7 @@ import java.time.Clock;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
+import java.util.TimeZone;
 
 public class SomeMethodsExamples {
     public static void checkLocalDateTime() {
@@ -25,5 +26,16 @@ public class SomeMethodsExamples {
         System.out.println("Gives date without Time using now() method. >> " + localDate);
         LocalDate localDate2 = LocalDate.now(ZoneId.of(ZoneId.SHORT_IDS.get("ECT")));
         System.out.println("now() is overridden to take ZoneID as parametere using this we can get the same date under different timezones. >> " + localDate2);
+    }
+
+    /**
+     * This has the methods of abstract class {@link Clock}. Clock can be used
+     * for time which has time with {@link TimeZone
+     * }.
+     */
+    public static void checkClock() {
+        Clock clock = Clock.systemUTC();
+        // Represents time according to ISO 8601
+        System.out.println("Time using Clock class : " + clock.instant());
     }
 }
