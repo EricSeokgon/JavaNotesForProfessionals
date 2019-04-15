@@ -1,9 +1,6 @@
 package chapter17;
 
-import java.time.Clock;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
+import java.time.*;
 import java.util.TimeZone;
 
 public class SomeMethodsExamples {
@@ -37,5 +34,15 @@ public class SomeMethodsExamples {
         Clock clock = Clock.systemUTC();
         // Represents time according to ISO 8601
         System.out.println("Time using Clock class : " + clock.instant());
+    }
+
+    /**
+     * This has the {@link Instant} class methods.
+     */
+    public static void checkInstant() {
+        Instant instant = Instant.now();
+        System.out.println("Instant using now() method :: " + instant);
+        Instant ins1 = Instant.now(Clock.systemUTC());
+        System.out.println("Instants using now(Clock clock) :: " + ins1);
     }
 }
