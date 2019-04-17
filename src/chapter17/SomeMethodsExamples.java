@@ -45,4 +45,31 @@ public class SomeMethodsExamples {
         Instant ins1 = Instant.now(Clock.systemUTC());
         System.out.println("Instants using now(Clock clock) :: " + ins1);
     }
+
+    /**
+     * This class checks the methods of the {@link Duration} class.
+     */
+    public static void checkDuration() {
+// toString() converts the duration to PTnHnMnS format according to ISO
+// 8601 standard. If a field is zero its ignored.
+// P is the duration designator (historically called "period") placed at
+// the start of the duration representation.
+// Y is the year designator that follows the value for the number of
+// years.
+// M is the month designator that follows the value for the number of
+// months.
+// W is the week designator that follows the value for the number of
+// weeks.
+// D is the day designator that follows the value for the number of
+// days.
+// T is the time designator that precedes the time components of the
+// representation.
+// H is the hour designator that follows the value for the number of
+// hours.
+// M is the minute designator that follows the value for the number of
+// minutes.
+// S is the second designator that follows the value for the number of
+// seconds.
+        System.out.println(Duration.ofDays(2));
+    }
 }
