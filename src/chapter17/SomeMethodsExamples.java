@@ -72,4 +72,13 @@ public class SomeMethodsExamples {
 // seconds.
         System.out.println(Duration.ofDays(2));
     }
+
+    /**
+     * Shows Local time without date. It doesn't store or represenet a date and
+     * time. Instead its a representation of Time like clock on the wall.
+     */
+    public static void checkLocalTime() {
+        LocalTime localTime = LocalTime.now();
+        System.out.println("LocalTime :: " + localTime);
+    }
 }
