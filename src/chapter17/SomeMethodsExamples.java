@@ -81,4 +81,13 @@ public class SomeMethodsExamples {
         LocalTime localTime = LocalTime.now();
         System.out.println("LocalTime :: " + localTime);
     }
+
+    /**
+     * A date time with Time zone details in ISO-8601 standards.
+     */
+    public static void checkZonedDateTime() {
+        ZonedDateTime zonedDateTime = ZonedDateTime.now(ZoneId
+                .of(ZoneId.SHORT_IDS.get("CST")));
+        System.out.println(zonedDateTime);
+    }
 }
