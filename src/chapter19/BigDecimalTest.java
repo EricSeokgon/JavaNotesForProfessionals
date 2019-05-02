@@ -20,6 +20,9 @@ public class BigDecimalTest {
         BigDecimal result = a3.add(b3);
         System.out.println(result);
 
+        BigDecimal result2 = a3.subtract(b3);
+        System.out.println(result2);
+
 
     }
 }
