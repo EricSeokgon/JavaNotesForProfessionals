@@ -1,6 +1,8 @@
 package chapter19;
 
 import java.math.BigDecimal;
+import java.math.MathContext;
+import java.math.RoundingMode;
 
 public class BigDecimalTest {
     public static void main(String[] args) {
@@ -20,8 +22,25 @@ public class BigDecimalTest {
         BigDecimal result = a3.add(b3);
         System.out.println(result);
 
+        //Equivalent to result = a - b
         BigDecimal result2 = a3.subtract(b3);
         System.out.println(result2);
+
+        //Equivalent to result = a * b
+        BigDecimal result3 = a3.multiply(b3);
+        System.out.println(result3);
+
+        MathContext returnRules = new MathContext(4, RoundingMode.HALF_DOWN);
+        //Equivalent to result = a * b
+        BigDecimal result4 = a3.multiply(b3, returnRules);
+        System.out.println(result4);
+
+        BigDecimal result5 = a3.divide(b3);
+        System.out.println(result5);
+
+        //Equivalent to result = a / b (Upto 10 Decimal places and Round HALF_UP)
+        BigDecimal result6 = a3.divide(b3,10,RoundingMode.HALF_UP);
+        System.out.println(result6);
 
 
     }
