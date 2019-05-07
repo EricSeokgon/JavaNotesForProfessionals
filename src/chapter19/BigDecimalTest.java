@@ -42,6 +42,10 @@ public class BigDecimalTest {
         BigDecimal result6 = a3.divide(b3,10,RoundingMode.HALF_UP);
         System.out.println(result6);
 
+        //Equivalent to result = a % b
+        BigDecimal result7 = a3.remainder(b3);
+        System.out.println(result7);
+
 
     }
 }
