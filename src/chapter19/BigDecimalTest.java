@@ -46,6 +46,10 @@ public class BigDecimalTest {
         BigDecimal result7 = a3.remainder(b3);
         System.out.println(result7);
 
+        //Equivalent to result = a^10
+        BigDecimal result8 = a3.pow(10);
+        System.out.println(result8);
+
 
     }
 }
