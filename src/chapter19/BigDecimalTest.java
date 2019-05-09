@@ -50,6 +50,10 @@ public class BigDecimalTest {
         BigDecimal result8 = a3.pow(10);
         System.out.println(result8);
 
+        //Equivalent to result = MAX(a,b)
+        BigDecimal result9 = a3.max(b3);
+        System.out.println(result9);
+
 
     }
 }
