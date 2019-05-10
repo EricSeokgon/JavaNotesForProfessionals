@@ -54,6 +54,10 @@ public class BigDecimalTest {
         BigDecimal result9 = a3.max(b3);
         System.out.println(result9);
 
+        //Equivalent to result = MIN(a,b)
+        BigDecimal result10 = a3.min(b3);
+        System.out.println(result10);
+
 
     }
 }
