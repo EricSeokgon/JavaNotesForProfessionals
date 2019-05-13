@@ -58,6 +58,11 @@ public class BigDecimalTest {
         BigDecimal result10 = a3.min(b3);
         System.out.println(result10);
 
+        BigDecimal a4 = new BigDecimal("5234.49843776");
+        //Moves the decimal point to 2 places left of current position
+        BigDecimal result11 = a4.movePointLeft(2);
+        System.out.println(result11);
+
 
     }
 }
