@@ -63,6 +63,10 @@ public class BigDecimalTest {
         BigDecimal result11 = a4.movePointLeft(2);
         System.out.println(result11);
 
+        //Moves the decimal point to 3 places right of current position
+        BigDecimal result12 = a4.movePointRight(3);
+        System.out.println(result12);
+
 
     }
 }
