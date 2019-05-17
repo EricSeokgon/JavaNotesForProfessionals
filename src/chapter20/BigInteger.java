@@ -2,16 +2,21 @@ package chapter20;
 
 public class BigInteger {
 
-    String decimalString = "-1";
-    BigInteger valueFromDecimalString = new BigInteger(decimalString);
-
-    int intValue = Integer.MIN_VALUE; // negative
-    BigInteger valueFromInt = BigInteger.valueOf(intValue);
-
-    private static BigInteger valueOf(int intValue) {
-    }
-
-    public BigInteger(String decimalString) {
+    public BigInteger(String s) {
 
     }
+
+    public static void main(String[] args) {
+        BigInteger value1 = new BigInteger("10");
+        BigInteger value2 = new BigInteger("10");
+        BigInteger sum = value1.add(value2);
+        System.out.println(sum);
+    }
+
+    private BigInteger add(BigInteger value2) {
+
+        return value2;
+    }
+
+
 }
