@@ -9,8 +9,17 @@ public class BigInteger {
     public static void main(String[] args) {
         BigInteger value1 = new BigInteger("10");
         BigInteger value2 = new BigInteger("10");
+
         BigInteger sum = value1.add(value2);
         System.out.println(sum);
+
+        BigInteger sub = value1.subtract(value2);
+        System.out.println(sub);
+    }
+
+    private BigInteger subtract(BigInteger value2) {
+
+        return value2;
     }
 
     private BigInteger add(BigInteger value2) {
