@@ -15,7 +15,15 @@ public class BigInteger {
 
         BigInteger sub = value1.subtract(value2);
         System.out.println(sub);
+
+        BigInteger div = value1.divide(value2);
+        System.out.println(div);
     }
+
+    private BigInteger divide(BigInteger value2) {
+        return null;
+    }
+
 
     private BigInteger subtract(BigInteger value2) {
 
