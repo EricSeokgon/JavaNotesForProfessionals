@@ -18,12 +18,18 @@ public class BigInteger {
 
         BigInteger div = value1.divide(value2);
         System.out.println(div);
+
+        BigInteger mul = value1.multiply(value2);
+        System.out.println(mul);
+    }
+
+    private BigInteger multiply(BigInteger value2) {
+        return null;
     }
 
     private BigInteger divide(BigInteger value2) {
         return null;
     }
-
 
     private BigInteger subtract(BigInteger value2) {
 
