@@ -21,6 +21,13 @@ public class BigInteger {
 
         BigInteger mul = value1.multiply(value2);
         System.out.println(mul);
+
+        BigInteger power = value1.pow(3);
+        System.out.println(power);
+    }
+
+    private BigInteger pow(int i) {
+        return null;
     }
 
     private BigInteger multiply(BigInteger value2) {
