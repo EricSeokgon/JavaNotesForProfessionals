@@ -1,11 +1,8 @@
 package chapter20;
 
-public class BigInteger {
+import java.math.BigInteger;
 
-    public BigInteger(String s) {
-
-    }
-
+public class BigIntegerTest {
     public static void main(String[] args) {
         BigInteger value1 = new BigInteger("10");
         BigInteger value2 = new BigInteger("10");
@@ -24,29 +21,8 @@ public class BigInteger {
 
         BigInteger power = value1.pow(3);
         System.out.println(power);
+
+        System.out.println(value1.gcd(value2));
     }
-
-    private BigInteger pow(int i) {
-        return null;
-    }
-
-    private BigInteger multiply(BigInteger value2) {
-        return null;
-    }
-
-    private BigInteger divide(BigInteger value2) {
-        return null;
-    }
-
-    private BigInteger subtract(BigInteger value2) {
-
-        return value2;
-    }
-
-    private BigInteger add(BigInteger value2) {
-
-        return value2;
-    }
-
 
 }
