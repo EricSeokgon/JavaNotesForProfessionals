@@ -23,6 +23,8 @@ public class BigIntegerTest {
         System.out.println(power);
 
         System.out.println(value1.gcd(value2));
+
+        System.out.println(value1.max(value2));
     }
 
 }
