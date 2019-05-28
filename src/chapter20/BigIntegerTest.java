@@ -25,6 +25,8 @@ public class BigIntegerTest {
         System.out.println(value1.gcd(value2));
 
         System.out.println(value1.max(value2));
+
+        System.out.println(value1.min(value2));
     }
 
 }
