@@ -27,6 +27,15 @@ public class BigIntegerTest {
         System.out.println(value1.max(value2));
 
         System.out.println(value1.min(value2));
+
+        BigInteger one = BigInteger.valueOf(1);
+        BigInteger two = BigInteger.valueOf(2);
+        if(one.equals(two)){
+            System.out.println("Equal");
+        }
+        else{
+            System.out.println("Not Equal");
+        }
     }
 
 }
