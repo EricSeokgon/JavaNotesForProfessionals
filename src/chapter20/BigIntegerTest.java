@@ -42,6 +42,17 @@ public class BigIntegerTest {
         if(BigInteger.ONE.equals(reallyBig)){
         //code when they are equal.
         }
+
+        BigInteger reallyBig1 = BigInteger.valueOf(100);
+        if(reallyBig.compareTo(reallyBig1) == 0){
+        //code when both are equal.
+        }
+        else if(reallyBig.compareTo(reallyBig1) == 1){
+        //code when reallyBig is greater than reallyBig1.
+        }
+        else if(reallyBig.compareTo(reallyBig1) == -1){
+        //code when reallyBig is less than reallyBig1.
+        }
     }
 
 }
