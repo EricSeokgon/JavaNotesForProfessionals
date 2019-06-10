@@ -52,9 +52,11 @@ public class BigIntegerTest {
         }
         else if(reallyBig.compareTo(reallyBig1) == -1){
         //code when reallyBig is less than reallyBig1.
-
-
         }
+
+        BigInteger val1 = new BigInteger("10");
+        BigInteger val2 = new BigInteger("9");
+        val1.or(val2);
     }
 
 }
