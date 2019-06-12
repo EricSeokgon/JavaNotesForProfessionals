@@ -57,6 +57,12 @@ public class BigIntegerTest {
         BigInteger val1 = new BigInteger("10");
         BigInteger val2 = new BigInteger("9");
         val1.or(val2);
+        val1.and(val2);
+        val1.xor(val2);
+        val1.shiftRight(1); // the argument be an Integer
+        val1.shiftLeft(1); // here parameter should be Integer
+        val1.not();
+        val1.andNot(val2);
     }
 
 }
