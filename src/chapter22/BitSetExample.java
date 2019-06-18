@@ -12,5 +12,10 @@ public class BitSetExample {
         final boolean b = bitSet.get(3); // b = false
         bitSet.flip(6); // {0, 2, 4}
         bitSet.set(100); // {0, 2, 4, 100} - expands automatically
+
+        bitSet.and(new BitSet(8));
+        bitSet.or(new BitSet(8));
+        bitSet.xor(new BitSet(8));
+        bitSet.andNot(new BitSet(8));
     }
 }
