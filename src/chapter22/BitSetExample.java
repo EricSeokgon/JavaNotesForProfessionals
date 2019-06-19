@@ -4,6 +4,10 @@ import java.util.BitSet;
 import java.util.stream.IntStream;
 
 public class BitSetExample {
+    boolean isPowerOfTwo(int x)
+    {
+        return (x != 0) && ((x & (x - 1)) == 0);
+    }
     public static void main(String[] args) {
         final BitSet bitSet = new BitSet(8); // by default all bits are unset
         IntStream.range(0, 8).filter(i -> i % 2 == 0).forEach(bitSet::set); // {0, 2, 4, 6}
@@ -17,5 +21,6 @@ public class BitSetExample {
         bitSet.or(new BitSet(8));
         bitSet.xor(new BitSet(8));
         bitSet.andNot(new BitSet(8));
+
     }
 }
