@@ -8,6 +8,9 @@ public class BitSetExample {
     {
         return (x != 0) && ((x & (x - 1)) == 0);
     }
+    int pow2(int exp){
+        return 1<<exp;
+    }
     public static void main(String[] args) {
         final BitSet bitSet = new BitSet(8); // by default all bits are unset
         IntStream.range(0, 8).filter(i -> i % 2 == 0).forEach(bitSet::set); // {0, 2, 4, 6}
