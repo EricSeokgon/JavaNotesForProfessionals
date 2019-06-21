@@ -25,5 +25,16 @@ public class BitSetExample {
         bitSet.xor(new BitSet(8));
         bitSet.andNot(new BitSet(8));
 
+        // Raw bytes as input
+        byte[] b = {(byte)0x65, (byte)0xFF, (byte)0x31};
+// Packed in big endian: x == 0x65FF31
+        int x = (b[0] & 0xFF) << 16 // Red
+                | (b[1] & 0xFF) << 8 // Green
+                | (b[2] & 0xFF) << 0; // Blue
+// Packed in little endian: y == 0x31FF65
+        int y = (b[0] & 0xFF) << 0
+                | (b[1] & 0xFF) << 8
+                | (b[2] & 0xFF) << 16;
+
     }
 }
