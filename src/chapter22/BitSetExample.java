@@ -26,15 +26,15 @@ public class BitSetExample {
         bitSet.andNot(new BitSet(8));
 
         // Raw bytes as input
-        byte[] b = {(byte)0x65, (byte)0xFF, (byte)0x31};
-// Packed in big endian: x == 0x65FF31
-        int x = (b[0] & 0xFF) << 16 // Red
-                | (b[1] & 0xFF) << 8 // Green
-                | (b[2] & 0xFF) << 0; // Blue
-// Packed in little endian: y == 0x31FF65
-        int y = (b[0] & 0xFF) << 0
-                | (b[1] & 0xFF) << 8
-                | (b[2] & 0xFF) << 16;
+        byte[] b1 = {(byte)0x65, (byte)0xFF, (byte)0x31};
+        // Packed in big endian: x == 0x65FF31
+        int x = (b1[0] & 0xFF) << 16 // Red
+                | (b1[1] & 0xFF) << 8 // Green
+                | (b1[2] & 0xFF) << 0; // Blue
+        // Packed in little endian: y == 0x31FF65
+        int y = (b1[0] & 0xFF) << 0
+                | (b1[1] & 0xFF) << 8
+                | (b1[2] & 0xFF) << 16;
 
     }
 }
