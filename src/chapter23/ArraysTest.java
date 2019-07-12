@@ -1,5 +1,8 @@
 package chapter23;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class ArraysTest {
     int[] numbers1 = new int[3]; // Array for 3 int values, default value is 0
     int[] numbers2 = { 1, 2, 3 }; // Array literal of 3 int values
@@ -15,4 +18,7 @@ public class ArraysTest {
     // Array of three strings (reference type).
     Object[] dArt = new Object[] { new Object(), "We love Stack Overflow.", new Integer(3) };
 // Array of three Objects (reference type).
+// Auto-boxing happening for int 127 here
+Integer[] initial = { 127, Integer.valueOf( 42 ) };
+    List<Integer> toList = Arrays.asList( initial ); // Fixed size!
 }
