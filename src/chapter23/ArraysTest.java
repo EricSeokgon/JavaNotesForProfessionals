@@ -21,4 +21,8 @@ public class ArraysTest {
 // Auto-boxing happening for int 127 here
 Integer[] initial = { 127, Integer.valueOf( 42 ) };
     List<Integer> toList = Arrays.asList( initial ); // Fixed size!
+
+    // Note: Works with all collections
+    Integer[] fromCollection = toList.toArray( new Integer[toList.size()] );
+
 }
