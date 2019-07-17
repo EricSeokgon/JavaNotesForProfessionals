@@ -2,6 +2,7 @@ package chapter23;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Stream;
 
 public class ArraysTest {
     int[] numbers1 = new int[3]; // Array for 3 int values, default value is 0
@@ -24,5 +25,11 @@ Integer[] initial = { 127, Integer.valueOf( 42 ) };
 
     // Note: Works with all collections
     Integer[] fromCollection = toList.toArray( new Integer[toList.size()] );
+
+    // Streams - JDK 8+
+    Stream<Integer> toStream = Arrays.stream( initial );
+    Integer[] fromStream = toStream.toArray( Integer[]::new );
+    int size = 42;
+    int[] array = new int[size];
 
 }
