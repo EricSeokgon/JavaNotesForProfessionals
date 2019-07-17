@@ -32,4 +32,7 @@ Integer[] initial = { 127, Integer.valueOf( 42 ) };
     int size = 42;
     int[] array = new int[size];
 
+    int[] array1 = { 1,2,3 };
+    int[] array2 = new int[10];
+
 }
