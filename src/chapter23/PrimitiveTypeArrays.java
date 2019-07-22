@@ -7,5 +7,8 @@ public class PrimitiveTypeArrays {
         int[] array2 = { 1, 2, 3 }; // Shortcut syntax with array initializer.
         int[] array3 = new int[3]; // Equivalent to { 0, 0, 0 }
         int[] array4 = null; // The array itself is an object, so it
+
+        int[] array5;
+        int[] a; int[][] b;
     }
 }
