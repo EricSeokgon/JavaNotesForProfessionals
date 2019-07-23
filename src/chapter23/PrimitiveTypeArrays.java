@@ -10,5 +10,9 @@ public class PrimitiveTypeArrays {
 
         int[] array5;
         int[] a; int[][] b;
+
+        String[] array6 = new String[] { "Laurel", "Hardy" }; // Create an array with new
+// operator and array initializer.
+        String[] array7 = { "Laurel", "Hardy" }; // Shortcut syntax with array
     }
 }
