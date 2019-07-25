@@ -18,5 +18,6 @@ public class PrimitiveTypeArrays {
         String[] array8 = new String[3]; // { null, null, null }
         String[] array9 = null; // null
 
+
     }
 }
