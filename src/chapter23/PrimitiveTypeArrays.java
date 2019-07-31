@@ -18,5 +18,9 @@ public class PrimitiveTypeArrays {
         String[] array8 = new String[3]; // { null, null, null }
         String[] array9 = null; // null
         Object[] array10 = { new Object(), new Object() };
+
+        Object[] array11 = new String[] { "foo", "bar", "baz" };
+        array11[1] = "qux"; // fine
+        array11[1] = new StringBuilder(); // throws ArrayStoreException
     }
 }
