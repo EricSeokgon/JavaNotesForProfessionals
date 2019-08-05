@@ -22,5 +22,6 @@ public class PrimitiveTypeArrays {
         Object[] array11 = new String[] { "foo", "bar", "baz" };
         array11[1] = "qux"; // fine
         array11[1] = new StringBuilder(); // throws ArrayStoreException
+
     }
 }
