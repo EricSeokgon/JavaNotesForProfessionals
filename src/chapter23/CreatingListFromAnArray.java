@@ -23,5 +23,12 @@ public class CreatingListFromAnArray {
 // Array of three strings (reference type).
         Object[] dArt = new Object[] { new Object(), "We love Stack Overflow.", new Integer(3) };
 // Array of three Objects (reference type).
+        // Parameters require objects, not primitives
+// Auto-boxing happening for int 127 here
+        Integer[] initial = { 127, Integer.valueOf( 42 ) };
+        List<Integer> toList = Arrays.asList( initial ); // Fixed size!
+// Note: Works with all collections
+        Integer[] fromCollection = toList.toArray( new Integer[toList.size()] );
+
     }
 }
