@@ -7,7 +7,5 @@ public class ThreadExample {
 
         Thread thread2 = new Thread(new MusicRunnable());
         thread2.start();
-
-
     }
 }
