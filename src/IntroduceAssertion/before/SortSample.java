@@ -16,10 +16,30 @@ public class SortSample {
                     m = y;
                 }
             }
+            assert isMin(m, x, _data.length - 1);
             int v = _data[m];
             _data[m] = _data[x];
             _data[x] = v;
+            assert isSorted(0, x + 1);
         }
+    }
+
+    private boolean isSorted(int start, int end) {
+        for (int i = start; i < end; i++) {
+            if (_data[i] > _data[i + 1]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private boolean isMin(int pos, int start, int end) {
+        for (int i = start; i <= end; i++) {
+            if (_data[pos] > _data[i]) {
+                return false;
+            }
+        }
+        return true;
     }
 
     public String toString() {
