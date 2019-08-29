@@ -15,8 +15,17 @@ public class FindingAnElementinAnArray {
         int arraysIx2 = Arrays.asList(ints).indexOf(1);
 
         int istreamIx = IntStream.range(0, strings.length)
-                .filter(i->"A".equals(strings[i]))
+                .filter(i -> "A".equals(strings[i]))
                 .findFirst()
                 .orElse(-1);
+
+        int loopIx = -1;
+        for (int i = 0; i < strings.length; i++) {
+            if ("A".equals(strings[i])) {
+                loopIx = i;
+                break;
+
+            }
+        }
     }
 }
