@@ -35,5 +35,11 @@ public class RemovingItems {
                 fruitIterator.remove();
             }
         }
+
+        fruits.set(0, "Watermelon");
+        while (fruitIterator.hasNext()) {
+            System.out.println(fruitIterator.next());
+        }
+
     }
 }
