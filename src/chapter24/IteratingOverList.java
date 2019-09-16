@@ -3,8 +3,9 @@ package chapter24;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.ListIterator;
 
-public class Iterating {
+public class IteratingOverList {
     public static void main(String[] args) {
         List<String> names = new ArrayList<>(Arrays.asList("Clementine", "Duran", "Mike"));
         //Version >= java SE 8
@@ -20,5 +21,16 @@ public class Iterating {
             System.out.println(names.get(i));
         }
 
+        //Version >= SE 1.2
+        ListIterator<String> listIterator = names.listIterator();
+
+        //Iterates list in forward direction
+        while (listIterator.hasNext()) {
+            System.out.println(listIterator.next());
+        }
+
+        while (listIterator.hasPrevious()) {
+            System.out.println(listIterator.previous());
+        }
     }
 }
