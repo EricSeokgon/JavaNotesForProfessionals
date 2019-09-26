@@ -3,6 +3,7 @@ package chapter26;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class SetsBasic {
     public static void main(String[] args) {
@@ -29,6 +30,18 @@ public class SetsBasic {
         setStr2.add("Apple");
         setStr2.add("Strawberry");
         System.out.println(setStr2);
+
+        Set<String> set3= new TreeSet<>();
+        set3.add("Banana");
+        set3.add("Banana");
+        set3.add("Apple");
+        set3.add("Strawberry");
+
+        Set<String> set4 = new TreeSet<> ((string1, string2) -> string2.compareTo(string1));
+        set4.add("Banana");
+        set4.add("Banana");
+        set4.add("Apple");
+        set4.add("Strawberry");
 
     }
 }
